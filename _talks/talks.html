@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="images/favicon.ico">
+  <title>ISP - Talks</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <!-- <link href="theme.css" rel="stylesheet"> -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!-- Local styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body role="document" style="padding-top: 50px;">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">ISP</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="people.html">people</a></li>
+          <li class="dropdown">
+            <a href="research.html" class="dropdown-toggle disabled" data-toggle="dropdown">research<span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="machine.html">Machine learning</a></li>
+              <li><a href="neuro.html">Visual neuroscience</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="improc.html">Image processing</a></li>
+              <li><a href="remote.html">Remote sensing</a></li>
+              <li><a href="geoscience.html">Geosciences</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html">projects</a></li>
+          <li class="dropdown">
+            <a href="papers.html" class="dropdown-toggle disabled" data-toggle="dropdown">publications<span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="papers.html">journals</a></li>
+              <li><a href="conferences.html">conferences</a></li>
+              <li><a href="books.html">books</a></li>
+              <li class="active"><a href="talks.html">talks</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="techreports.html">technical reports</a></li>
+              <li><a href="theses.html">theses</a></li>
+              <li><a href="press.html">press</a></li>
+            </ul>
+          </li>
+ 	 <li><a href="software.html">code</a></li>
+	 <li><a href="data.html">data</a></li>
+          <li><a href="seminars.html">seminars</a></li>
+          <li><a href="courses.html">courses</a></li>
+          <li><a href="collaborators.html">collaborators</a></li>
+          <li><a href="ispnews.html">news</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <textarea id="bibtex_input" style="display:none;"></textarea>
+
+  <div class="container">
+    <h2>
+      <span class="label label-info">Invited talks</span><br>
+    </h2>
+    <textarea id="bibtex_input" style="display:none;"></textarea>
+
+    <div class="main">
+      <div class="bibtex_template" style="display:none; padding:  0.8em;">
+        <li style="padding:  0.2em;">
+          <span>
+            <span class="title" style="font-weight: bold;"></span>
+            <br>
+            <span class="author"></span>
+            <br>
+            <span class="booktitle" style="font-style: italic;"></span>
+            <br>
+            <span class="address"></span>, <span class="year"></span>.
+          </span>
+          <br>
+          <!--   <span class="label label-primary "></span> -->
+          <span class="if url">
+            <button type="button" class="btn btn-sm btn-info" aria-label="Left Align">
+              <a class="url" style="color: #FFFFFF;"> URL </a>
+            </button>
+          </span>
+          <span class="if pdf">
+            <button type="button" class="btn btn-sm btn-danger" aria-label="Left Align">
+              <a class="pdf" style="color: #FFFFFF;"> PDF </a>
+            </button>
+          </span>
+          <span class="if doi">
+            <button type="button" class="btn btn-sm btn-warning" aria-label="Left Align">
+              <a class="doi" style="color: #FFFFFF;"> DOI </a>
+            </button>
+          </span>
+          <span class="if bibtex">
+            <button type="button" class="btn bibtex_but btn-sm btn-success" data-toggle="collapse" data-target="#demo">
+              bibtex
+              <!-- <a class="test " style="color: #FFFFFF;">  </a> -->
+            </button>
+          </span>
+          <span class="if abstract">
+            <button type="button" class="btn abstract_but btn-sm btn-info" data-toggle="collapse"
+              data-target="#demo">abstract</button>
+          </span>
+          <br>
+          <span>
+            <div class="abstractdata alert alert-info collapse closed" role="alert"><span class="abstract"></span></div>
+            <div class="bibtexdata alert alert-success collapse closed" role="alert"><span class="bibtex"></span></div>
+          </span>
+      </div> <!-- bibtex_template -->
+
+      <ol reversed>
+        <h1 class="projects hide">
+          <button class="btn btn-normal btn-projects" value="all">All projects</button>
+        </h1>
+        <h1 class="years panel-title hide">
+          <button class="btn btn-primary btn-years" type="button" value='all'>All</button>
+        </h1>
+        <div class="panel-body">
+          <h5>
+            <div id="bibtex_display"></div>
+          </h5>
+        </div>
+      </ol>
+    </div> <!-- main -->
+  </div><!-- /.container -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/bibtex_js.js"></script>
+  <script type="text/javascript" src="js/bibtex_functions.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#bibtex_input").load("bibs/talks.bib", my_bibtex_js_draw);
+    });
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
